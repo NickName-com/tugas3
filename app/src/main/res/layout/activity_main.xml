@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+\\background
+
+    <ImageView
+        android:id="@+id/bg_gambar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/logo_bg_esa_unggul" />
+\\garis atas
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/violet"
+        android:visibility="visible"/>
+\\foto profile
+    <ImageView
+        android:id="@+id/foto_profile"
+        android:layout_width="90dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/foto_profile"
+        />
+\\nama
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/foto_profile"
+        android:text="Arif Prayogi"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+\\\rule
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rule"
+        android:layout_toRightOf="@+id/foto_profile"
+        android:layout_below="@+id/nama"
+        android:layout_marginLeft="10dp"
+        android:text="IT-Support"
+        android:textSize="12dp"
+        />
+    \\icon email
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/icon_email"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/nama"
+        android:src="@drawable/icon_email"
+        />
+
+    \\icon telepon
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/icon_telepon"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/nama"
+        android:layout_below="@id/icon_email"
+        android:src="@drawable/icon_telepon"
+        />
+    \\icon alamat
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/icon_alamat"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/nama"
+        android:layout_below="@id/icon_telepon"
+        android:src="@drawable/icon_alamat"
+        />
+    \\icon website
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/icon_website"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/nama"
+        android:layout_below="@id/icon_alamat"
+        android:src="@drawable/icon_website"
+        />
+
+    \\contact
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@+id/icon_email"
+        android:text="arifprayogi243@gmail.com\n\n089643648862\n\nJl.Pesing Garden Blok.IV\n\nhttps://github.com/NickName-com"
+        android:textColor="@color/black"
+        android:textSize="8dp"
+        android:textStyle="bold" />
+\\Tentang
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tentang"
+        android:layout_below="@id/foto_profile"
+        android:layout_toLeftOf="@+id/nama"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="22dp"
+        android:text="Objective"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        />
+
+    <View
+        android:id="@+id/visible2"
+        android:layout_width="match_parent"
+        android:layout_below="@id/foto_profile"
+        android:layout_toRightOf="@+id/foto_profile"
+        android:layout_height="2dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/violet"
+        android:visibility="visible"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tentang_text"
+        android:layout_below="@+id/visible2"
+        android:layout_toRightOf="@+id/foto_profile"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="7dp"
+        android:text="Saya lahir di Jakarta pada 04 April 2000. Saya seorang pekerja keras, mampu bekerja secara individu maupun tim."
+        android:textSize="12dp"/>
+\\pengalaman
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pengalaman"
+        android:layout_below="@id/tentang"
+        android:layout_toLeftOf="@+id/nama"
+        android:layout_marginTop="40dp"
+        android:text="Experience"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        />
+
+    <View
+        android:id="@+id/visible3"
+        android:layout_width="match_parent"
+        android:layout_below="@id/tentang_text"
+        android:layout_toRightOf="@+id/foto_profile"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/violet"
+        android:visibility="visible" />
+\\pengalaman 1
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pengalaman_text"
+        android:layout_below="@+id/visible3"
+        android:layout_toRightOf="@id/foto_profile"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="10dp"
+        android:textSize="12dp"
+        android:text="CV. Lock PC"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pengalaman_text_thn"
+        android:layout_below="@+id/visible3"
+        android:layout_toRightOf="@id/foto_profile"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="10dp"
+        android:textSize="12dp"
+        android:text="                                                       Mar 2017- Apr 2017\nTechnical Support"
+        />
+\\pengalaman 2
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pengalaman_text2"
+        android:layout_below="@+id/pengalaman_text_thn"
+        android:layout_toRightOf="@id/foto_profile"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="10dp"
+        android:textSize="12dp"
+        android:text="PT. Media Kreasi Solusindo"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pengalaman_text_thn2"
+        android:layout_below="@+id/pengalaman_text_thn"
+        android:layout_toRightOf="@id/foto_profile"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="10dp"
+        android:textSize="12dp"
+        android:text="                                                        Jul 2018 - Nov2020\nIT-Support"
+        />
+\\pengalaman 3
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pengalaman_text3"
+        android:layout_below="@+id/pengalaman_text_thn2"
+        android:layout_toRightOf="@id/foto_profile"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="10dp"
+        android:textSize="12dp"
+        android:text="PT. Citra Prima Kharisma"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pengalaman_text_thn3"
+        android:layout_below="@+id/pengalaman_text_thn2"
+        android:layout_toRightOf="@id/foto_profile"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="10dp"
+        android:textSize="12dp"
+        android:text="                                                      Nov 2020 - Sekarang\nIT-Support"
+        />
+
+\\pendidikan
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pendidikan"
+        android:layout_below="@id/pengalaman"
+        android:layout_toLeftOf="@+id/nama"
+        android:layout_marginTop="90dp"
+        android:text="Education"
+        android:textSize="18dp"
+        android:textColor="@color/black"/>
+
+    <View
+        android:id="@+id/visible4"
+        android:layout_width="match_parent"
+        android:layout_below="@id/pengalaman_text_thn3"
+        android:layout_toRightOf="@+id/foto_profile"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/violet
+"
+        android:visibility="visible" />
+
+    \\pendidikan 1
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pendidikan_text"
+        android:layout_below="@+id/visible4"
+        android:layout_toRightOf="@id/foto_profile"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="10dp"
+        android:textSize="12dp"
+        android:text="SDN Kedoya Utara 05 Pagi"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pendidikan_text_thn"
+        android:layout_below="@+id/visible4"
+        android:layout_toRightOf="@id/foto_profile"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="10dp"
+        android:textSize="12dp"
+        android:text="                                                       Jul 2006 - Jun 2012"
+        />
+    \\pendidikan 2
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pendidikan_text2"
+        android:layout_below="@+id/pendidikan_text_thn"
+        android:layout_toRightOf="@id/foto_profile"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="12dp"
+        android:text="SMPN 197 Jakarta"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pendidikan_text_thn2"
+        android:layout_below="@+id/pendidikan_text_thn"
+        android:layout_toRightOf="@id/foto_profile"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="12dp"
+        android:text="                                                       Jul 2012 - Jun 2015"
+        />
+    \\pendidikan 3
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pendidikan_text3"
+        android:layout_below="@+id/pendidikan_text_thn2"
+        android:layout_toRightOf="@id/foto_profile"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="12dp"
+        android:text="SMK Islam AA"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pendidikan_text_thn3"
+        android:layout_below="@+id/pendidikan_text_thn2"
+        android:layout_toRightOf="@id/foto_profile"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="12dp"
+        android:text="                                                       Jul 2015 - Jun 2018\nTeknik Komputer dan Jaringan"
+        />
+    \\pendidikan 4
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pendidikan_text4"
+        android:layout_below="@+id/pendidikan_text_thn3"
+        android:layout_toRightOf="@id/foto_profile"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="10dp"
+        android:textSize="12dp"
+        android:text="Universitas Esa Unggul"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pendidikan_text_thn4"
+        android:layout_below="@+id/pendidikan_text_thn3"
+        android:layout_toRightOf="@id/foto_profile"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="10dp"
+        android:textSize="12dp"
+        android:text="                                                      Sep 2019 - Sekarang\nTeknik Informatika"
+        />
+
+</RelativeLayout>
